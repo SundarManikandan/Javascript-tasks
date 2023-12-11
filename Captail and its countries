@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>country and its capital</title>
+<script>
+function capital()
+{
+var cap = document.getElementById("country").value;
+document.getElementById("capitaltext").value = cap;
+}
+</script>
+</head>
+<body>
+<h1>CAPITAL OF COUNTRIES</h1>
+<select id="country" onchange="capital()">
+<option disabled="disabled" selected="selected">select</option>
+<option value="New Delhi">India</option>
+<option value="London">England</option>
+<option value="Paris">France</option>
+<option value="Madrid">Spain</option>
+<option value="Berlin">Germany</option>
+</select>&nbsp&nbsp
+
+CAPTIAL : <input type="text" id="capitaltext" style="color: brown; font-size: 25px; font-
+weight: bold; ">
+
+</body>
+</html>
