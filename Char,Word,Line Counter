@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>count</title>
+<script>
+function countText()
+{
+var text=document.getElementById("inputText").value;
+var charCount=text.trim().length;
+var wordCount = text.trim().split(/\s+/).length;
+var lineCount = text.trim().split(/\n/).length;
+if (charCount==0)
+{
+wordCount = 0;
+lineCount=0;
+}
+alert("Character Count: "+charCount+ "\n Word Count : " + wordCount + "\n
+Line Count : "+ lineCount);
+}
+</script>
+</head>
+<body>
+<h1>Character, Word and line Counter</h1>
+<textarea name="inputText" id="inputText" cols="50" rows="10"></textarea> <br>
+
+<button onclick="countText()">Submit</button>
+</body>
+</html>
